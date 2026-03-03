@@ -68,8 +68,6 @@ public static void main(String[] args){
 //     * * * 
 //     * * *
 
-//  Time Compexity : O(n^2)
-//  space Compexity : O(1)   
-    
+
     
       
