@@ -1,75 +1,98 @@
-import java.util.Scanner;
-public class Nbyn{
-public static void main(String[] args){
-    Scanner s = new Scanner(System.in);
-    System.out.println("Enter Number : ");
-
-    int n =s.nextInt();
-    int i,j;
-    for(i=1;i<=n;i++){
-        for(j=1;j<=n;j++){
-            System.err.print("* ");
+public class FourHnum{
+    public static void main(String[] args) {
+        int i,j;
+        for(i=1;i<=4;i++){
+            for(j=1;j<=4;j++){
+                System.out.print(" "+j);
+            }
+            System.err.println();
         }
-        System.out.println();
     }
 }
-}
 
+// -----------DRY RUN -------------
+//   i=1 i<=4 (1<=4) -> true 
+//   enter into outer loop
+//    j=1 j<=4 (1<=4) -> True
+//          Print j -> print 1               o/p : 1
+//          j++ (j=2) 
+//     j<=4 (2<=4) -> true
+//          print j -> print 2              o/p : 1 2
+//          j++ (j=3)
+//     J<=4 (3<=4) -> true
+//          print j -> print 3               o/p : 1 2 3 
+//           j++ (j=4)
+//   j<=4 (4=4) -> True 
+//          print j -> print 4               o/p : 1 2 3 4
+//          j++ (j=5)
+//   j<=4 (5<=4) -> False
+//   ------end inner loop---------
+//   next Line 
+//   i++ (i=2)
+//    i=2 i<=4 (2<=4) -> true 
+  // enter into outer loop
+  //  j=1 j<=4 (1<=4) -> True
+  //        Print j -> print 1               o/p : 1 2 3 4
+  //        j++ (j=2)                              1 
+  //   j<=4 (2<=4) -> true
+  //        print j -> print 2              o/p : 1 2 3 4
+  //        j++ (j=3)                             1 2
+  //   J<=4 (3<=4) -> true
+  //        print j -> print 3               o/p : 1 2 3 4 
+  //         j++ (j=4)                             1 2 3
+  // j<=4 (4=4) -> True 
+  //        print j -> print 4               o/p : 1 2 3 4
+  //        j++ (j=5)                              1 2 3 4 
+  // j<=4 (5<=4) -> False
+  // ------end inner loop---------
+  // next Line 
+  //  i=3 i<=4 (3<=4) -> true 
+  // enter into outer loop
+  //  j=1 j<=4 (1<=4) -> True
+  //        Print j -> print 1               o/p : 1 2 3 4
+  //        j++ (j=2)                              1 2 3 4
+  //   j<=4 (2<=4) -> true                         1
+  //        print j -> print 2              o/p : 1 2 3 4
+  //        j++ (j=3)                             1 2 3 4
+  //   J<=4 (3<=4) -> true                        1 2 
+  //        print j -> print 3   -----|            
+  //         j++ (j=4)                |---->  o/p : 1 2 3 4
+  //                                                1 2 3 4 
+  //                                                1 2 3   
+  // j<=4 (4=4) -> True 
+  //        print j -> print 4               o/p : 1 2 3 4
+  //        j++ (j=5)                              1 2 3 4
+ //         j<=4 (5<=4) -> False                   1 2 3 4
+ //  ------end inner loop---------
+ //  next Line 
+ //  i++ (i=4)
+ // i=4  i<=4 (4<=4) -> true 
+ //  enter into outer loop
+ //   j=1 j<=4 (1<=4) -> True
+ //         Print j -> print 1               o/p : 1 2 3 4 
+ //         j++ (j=2)                              1 2 3 4
+ //    j<=4 (2<=4) -> true                         1 2 3 4
+ //                                                1 
+ //         print j -> print 2              o/p : 1 2 3 4
+ //         j++ (j=3)                             1 2 3 4
+                                               // 1 2 3 4
+                                               // 1 2       
+ //    J<=4 (3<=4) -> true                        
+ //         print j -> print 3   -----|            
+ //          j++ (j=4)                |---->  o/p : 1 2 3 4
+ //                                                 1 2 3 4
+ //                                                 1 2 3 4
+ //  j<=4 (4=4) -> True                             1 2 3   
+ //         print j -> print 4               o/p : 1 2 3 4
+ //         j++ (j=5)                              1 2 3 4 
+ //         j<=4 (5<=4) -> False                   1 2 3 4
+ //  ------end inner loop---------                 1 2 3 4
+ //  next Line 
+ // i++ i=5 i<=4 (5<=4) -> False 
+ //  ------- end Outer loop-------
 
-// ----------DRY run for 3 -----------
-// n=3
-// i=1 i<=n (1<=3) -> True 
-//   j=1 j<=n (1<=3) -> true
-//     print *_
-//     j++ -> (j=2)
-//       j<=n (2<=3) -> true 
-//       print *_
-//       j++ ->(j=3)
-//         j<=n (3=3) -> true
-//         print *_  
-//         j++ -> (j=4)
-//         j<=n (4<=3) -> False
-//  --------End inner Loop----------       
-// next Line 
-// i++ (i=2) 
-//  i=2 i<=n (2<=3) -> True 
-//   j=1 j<=n (1<=3) -> true
-//     print *_
-//     j++ -> (j=2)
-//       j<=n (2<=3) -> true 
-//       print *_
-//       j++ ->(j=3)
-//         j<=n (3=3) -> true
-//         print *_  
-//         j++ -> (j=4)
-//         j<=n (4<=3) -> False
-//  --------End inner Loop----------       
-// next Line 
-// i++ (i=3)
-// i=3 i<=n (3<=3) -> True 
-//   j=1 j<=n (1<=3) -> true
-//     print *_
-//     j++ -> (j=2)
-//       j<=n (2<=3) -> true 
-//       print *_
-//       j++ ->(j=3)
-//         j<=n (3=3) -> true
-//         print *_  
-//         j++ -> (j=4)
-//         j<=n (4<=3) -> False
-//  --------End inner Loop----------       
-// next Line     
-// i++ (i=4)
-// i=4 i<=n (4<=3) -> False     
-// --------outer loop end-----------   
-
-//     Output : 
-//     * * *
-//     * * * 
-//     * * *
-
-//  Time Compexity : O(n^2)
-//  space Compexity : O(1)   
-    
-    
+ //  time Compexity : O(n^2) ->O(16)
+ //  space Compexity : O(1)
+  
+  
       
