@@ -91,8 +91,7 @@ public class FourHnum{
  // i++ i=5 i<=4 (5<=4) -> False 
  //  ------- end Outer loop-------
 
- //  time Compexity : O(n^2) ->O(16)
- //  space Compexity : O(1)
+
   
   
       
