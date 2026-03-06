@@ -28,7 +28,7 @@ public class Count_no {
 //     n=n/10 (32/10) ->3
 //     count ++ (1+1) -> 2  
 
-//  while (n!=0) (1 !=0) -> true
+//  while (n!=0) (3 !=0) -> true
 //     digit = n%10 (3%10 ) ->  3
 //     n=n/10 (3/10) ->0
 //     count ++ (2+1) -> 3
