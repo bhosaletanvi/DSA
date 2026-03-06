@@ -24,7 +24,7 @@ public class extractDigits {
 //     n=n/10 (32/10) ->3
        // print digit -> 2
 
-//  while (n!=0) (1 !=0) -> true
+//  while (n!=0) (3 !=0) -> true
 //     digit = n%10 (3%10 ) ->  3
 //     n=n/10 (3/10) ->0
        // print digit -> 3
