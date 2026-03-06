@@ -27,7 +27,7 @@ public class ReverseNumber{
 //     reverse=reverse*10+digit (1*10 +2 ) -> 12
 //     n=n/10 (32/10) ->3
 
-//  while (n!=0) (1 !=0) -> true
+//  while (n!=0) (3 !=0) -> true
 //     digit = n%10 (3 %10 ) ->  3
 //     reverse=reverse*10+digit (12*10 +3 ) -> 3
 //     n=n/10 (3/10) ->0
