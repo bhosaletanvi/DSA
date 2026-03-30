@@ -19,6 +19,9 @@ public class Occurance {
         for (int i = 0; i < arr.length; i++) {
             freq[arr[i]]++;
         }
+        if(target>max){
+            System.out.println("Target Not Found");
+        }
         System.out.println("Target Occurance for "+freq[target]+" Times .");
     }   
     

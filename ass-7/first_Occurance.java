@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class p1{
+class first_Occurance{
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");
