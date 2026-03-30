@@ -1,5 +1,5 @@
 import java.util.*;
-public class Max_element{
+public class min_element{
     public static void main(String[] args) {
          Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");
@@ -18,7 +18,7 @@ public class Max_element{
         return arr[index];
       }
       int right=f(arr,index+1);
-      if(arr[index]>right){
+      if(arr[index]<right){
         return arr[index];
       }
       return right;
