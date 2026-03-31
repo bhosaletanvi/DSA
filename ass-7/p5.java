@@ -1,7 +1,7 @@
 import java.util.*;
-public class negative_element{
+ class Even_array {
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+         Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");
         int size = sc.nextInt();
         int [] arr = new int [size];
@@ -13,16 +13,17 @@ public class negative_element{
         System.out.println(ans);
     }   
     static boolean  f(int [] arr, int index){
-        if(index==arr.length-1){
-            if(arr[index]<0){
-            return true;
-        }
+      if(index==arr.length-1){
+         if(arr[index]%2==0){
+         return true;
+      }
         return false;
-        }
-        if(arr[index]>0){
-            boolean right=f(arr, index+1);
-            return right;
-        }
+      }
+     boolean right=f(arr, index+1);
+     if(arr[index]%2==0 && right==true){
         return true;
+     }
+     return false;
     }
 }
+

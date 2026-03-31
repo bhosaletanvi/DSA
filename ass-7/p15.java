@@ -1,5 +1,5 @@
 import java.util.*;
-public class negative_sum {
+ class negative_sum {
     public static void main(String[] args) {
          Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");

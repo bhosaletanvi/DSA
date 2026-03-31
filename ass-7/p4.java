@@ -1,5 +1,5 @@
 import java.util.*;
-public class Even_array {
+ class Sorted_array {
     public static void main(String[] args) {
          Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");
@@ -14,16 +14,19 @@ public class Even_array {
     }   
     static boolean  f(int [] arr, int index){
       if(index==arr.length-1){
-         if(arr[index]%2==0){
-         return true;
-      }
-        return false;
-      }
-     boolean right=f(arr, index+1);
-     if(arr[index]%2==0 && right==true){
         return true;
-     }
-     return false;
+      }
+      boolean right=f(arr,index+1);
+      if(right){
+        if(arr[index]<arr[index+1]){
+            return right;
+        }
+        else{
+             return false;
+        }
+       
+      }
+      return false;
     }
 }
 

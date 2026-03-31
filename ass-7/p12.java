@@ -1,5 +1,5 @@
 import java.util.*;
-public class Stricktly_incresing {
+ class Stricktly_incresing {
     public static void main(String[] args) {
          Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");

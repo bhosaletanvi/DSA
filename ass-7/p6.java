@@ -1,7 +1,7 @@
 import java.util.*;
-public class target{
+ class negative_element{
     public static void main(String[] args) {
-         Scanner sc =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);
         System.out.print("Enter Array Size : ");
         int size = sc.nextInt();
         int [] arr = new int [size];
@@ -9,22 +9,20 @@ public class target{
         for (int i = 0; i < arr.length; i++) {
             arr[i]=sc.nextInt();
         }
-         System.out.print("Enter target : ");
-        int target = sc.nextInt();
-        boolean ans=f(arr,0,target);
+        boolean ans=f(arr,0);
         System.out.println(ans);
     }   
-    static boolean   f(int [] arr, int index,int target){
-      if(index==arr.length-1){
-        if(arr[index]==target){
+    static boolean  f(int [] arr, int index){
+        if(index==arr.length-1){
+            if(arr[index]<0){
             return true;
         }
         return false;
-      }
-      if(arr[index]==target){
-            return true;
         }
-        return f(arr, index+1, target);
+        if(arr[index]>0){
+            boolean right=f(arr, index+1);
+            return right;
+        }
+        return true;
     }
 }
-
