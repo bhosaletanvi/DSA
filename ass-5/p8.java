@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Count_divisors {
+class Count_divisors{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter Number : ");

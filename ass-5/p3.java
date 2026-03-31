@@ -1,47 +1,45 @@
 import java.util.Scanner;
-public class Count_no {
-        public static void main(String[] args) {
-        int count=0;    
+class ReverseNumber{
+    public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
        System.out.print("Enter Number : "); 
        int n =sc.nextInt();
+       int reverse=0;
        while(n!=0){
+        int digit=n%10;
+        reverse=reverse*10+digit;
         n=n/10;
-        count++;
        }
-       System.out.println("Total Digits in Number : "+count);
+       System.out.println("Reverse Number : "+reverse);
     }
 }
-    
 
 // --------------------- DRY RUN ------------------------------
-//   count =0 
 //   n=321
+// reverse =0
 //   while (n!=0) (321 !=0) -> true
 //     digit = n%10 (321 %10 ) ->  1
+//     reverse=reverse*10+digit (0*10 +1 ) -> 1
 //     n=n/10 (321/10) ->32
-//     count ++ (0+1) -> 1
 
 //  while (n!=0) (32 !=0) -> true
 //     digit = n%10 (32 %10 ) ->  2
+//     reverse=reverse*10+digit (1*10 +2 ) -> 12
 //     n=n/10 (32/10) ->3
-//     count ++ (1+1) -> 2  
 
 //  while (n!=0) (3 !=0) -> true
-//     digit = n%10 (3%10 ) ->  3
+//     digit = n%10 (3 %10 ) ->  3
+//     reverse=reverse*10+digit (12*10 +3 ) -> 3
 //     n=n/10 (3/10) ->0
-//     count ++ (2+1) -> 3
 
 //  while (n!=0) (0!=0) -> False 
-  
+//         print 54321
 // --------------- End while loop -------------------------------
   
-//   print Count -> 3
 
 //   o/p :
 
-// Enter Number : 54321
-// Total Digits in Number : 5
-
+// Enter Number : 12345
+// Reverse Number : 54321
   
   

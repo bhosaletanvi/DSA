@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class AmstrongNo {
+ class p6 {
         public static void main(String[] args) {
         int count=0;  
            
