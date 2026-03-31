@@ -12,7 +12,7 @@ class index_of_samllest_e {
         }
 
         int ans = f(arr, 0);
-        System.out.println("Index " + ans);
+        System.out.println("Index : " + ans);
     }
 
     static int f(int[] arr, int index) {
