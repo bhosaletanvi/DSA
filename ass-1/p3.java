@@ -1,4 +1,4 @@
-public class FourVnum{
+class FourVnum{
     public static void main(String[] args) {
         int i,j;
         for(i=1;i<=4;i++){
