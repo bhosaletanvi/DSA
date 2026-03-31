@@ -1,5 +1,5 @@
 import  java.util.Scanner;
-public class Coprime_No{
+class Coprime_No{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter 1st Number : ");
