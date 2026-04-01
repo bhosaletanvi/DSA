@@ -15,18 +15,17 @@ class pelindrome_array{
         arr[i]=sc.nextInt();
     } 
        int mid=arr.length/2;
-       int i=0;
-       boolean flag=false;
-       while(i<=mid-1){
-            for (int j = arr.length; j < mid+1; j++) {
-            if(arr[j]!=arr[i]){
-                flag=true;
+        boolean flag=false;
+        int i=0;
+        while(i<=mid-1){
+            for (int j = arr.length-1; j >=mid+1; j--) {
+                if(arr[i]==arr[j]){
+                    flag=true;
+                }
+                i++;
             }
-            i++;
-         }
-         System.out.println(flag);
-       }
-    
+        }
+        System.out.println(flag);
     }
     
 }

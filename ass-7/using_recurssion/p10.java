@@ -2,7 +2,7 @@ import java.util.*;
  class pelindrome_array {
     public static void main(String[] args) {
          Scanner sc =new Scanner(System.in);
-        System.out.print("Enter Array Size : ");
+        System.out.print("Enter Array Size(odd size) : ");
         int size = sc.nextInt();
         int [] arr = new int [size];
         System.out.print("Enter Elemets : ");
