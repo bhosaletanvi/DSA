@@ -14,15 +14,13 @@ class Max_element{
     for (int i = 0; i <arr.length; i++) {
         arr[i]=sc.nextInt();
     } 
-        boolean flag=false;
+        int max=0;
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]<0){
-                flag=true;
-                break;
+            if(arr[i]>max){
+                max=arr[i];
             }
-            
         }
-        System.out.println(flag);
+        System.out.println("Max element : "+max);
     }
     
 }
