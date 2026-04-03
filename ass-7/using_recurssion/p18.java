@@ -1,11 +1,23 @@
+
+import java.util.Scanner;
+
 // Check if all elements are unique
 // Input: {1, 2, 3, 4}
 // Output: true
 
-class UniqueArray {
+class UniqueArray{
     public static void main(String[] args) {
         
-        int[] arr = {1,1,3,4};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int size = sc.nextInt();
+
+       int [] arr = new int [size];
+        System.out.print("Enter Elemets : ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=sc.nextInt();
+        }
+
         int max = 0;
 
         // Find maximum element

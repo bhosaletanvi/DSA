@@ -1,7 +1,19 @@
+
+import java.util.Scanner;
+
 class divisible_by_k {
     public static void main(String[] args) {
-        int[] arr={2,4,5,6,9};
-        int k =2;
+         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int size = sc.nextInt();
+
+       int [] arr = new int [size];
+        System.out.print("Enter Elemets : ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Enter value of K: ");
+        int k = sc.nextInt();
         int ans=f(arr,k,0);
         System.out.println(ans);
     }
