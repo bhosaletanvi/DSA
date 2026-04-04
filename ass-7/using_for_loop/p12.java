@@ -1,3 +1,7 @@
+// Q12. Check Strictly Increasing
+// 👉 Return true if strictly increasing (no equal allowed)
+// Input: [1,2,3,3]
+// Output: false
 import java.util.*;
  class Stricktly_incresing {
     public static void main(String[] args) {

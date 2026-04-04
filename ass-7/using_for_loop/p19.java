@@ -1,3 +1,7 @@
+// Q19. Find Sum of Digits of All Elements
+// 👉 Each element is a number → sum all digits recursively
+// Input: [12, 34, 5]
+// output : 15
 import java.util.*;
 class Sum_of_digits{
     public static void main(String[] args) {

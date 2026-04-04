@@ -1,3 +1,7 @@
+// 14. Check if Array Contains Target
+// 👉 Return true if target exists
+// Input: [1,2,3,4], target = 3
+// Output: true
 import java.util.*;
 class Target_contain{
     public static void main(String[] args) {

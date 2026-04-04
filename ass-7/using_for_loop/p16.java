@@ -1,3 +1,7 @@
+// Q16. Find Index of Smallest Element
+// 👉 Return index of minimum element
+// Input: [5,2,8,1,3]
+// Output: 3
 import java.util.*;
 class index_of_min{
     public static void main(String[] args) {

@@ -1,3 +1,7 @@
+// Q20. Check if Array is Strictly Decreasing
+// 👉 Return true if strictly decreasing
+// Input: [9,7,5,2]
+// Output: true
 import java.util.*;
  class Stricktly_decresing {
     public static void main(String[] args) {

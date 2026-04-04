@@ -1,3 +1,7 @@
+// 18. Check if All Elements are Unique
+// 👉 Return true if no duplicates exist
+// Input: [1,2,3,4]
+// Output: true
 import java.util.*;
 class Unique_array{
     public static void main(String[] args) {

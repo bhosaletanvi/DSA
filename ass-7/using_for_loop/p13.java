@@ -1,3 +1,7 @@
+// 13. Count Elements Greater Than X
+// 👉 Return count of elements greater than given value
+// Input: arr = [1,5,3,7,2], x = 3
+// Output: 2
 import java.util.*;
 class Grated_than_X{
     public static void main(String[] args) {
