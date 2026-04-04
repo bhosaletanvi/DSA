@@ -1,3 +1,7 @@
+// Q3. Count Occurrences
+// 👉 Count how many times target appears
+// Input: [1,2,2,3,2], target = 2
+// Output: 3
 import java.util.*;
  class Occurance{
     public static void main(String[] args) {

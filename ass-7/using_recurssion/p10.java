@@ -1,3 +1,7 @@
+// 10. Check Palindrome Array
+// 👉 Return true if array is palindrome
+// Input: [1,2,3,2,1]
+// Output: true
 import java.util.*;
  class pelindrome_array {
     public static void main(String[] args) {

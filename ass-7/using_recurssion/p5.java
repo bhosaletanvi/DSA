@@ -1,3 +1,7 @@
+// 5. Check if All Elements are Even
+// 👉 Return true if all elements are even
+// Input: [2,4,6]
+// Output: true
 import java.util.*;
  class Even_array {
     public static void main(String[] args) {

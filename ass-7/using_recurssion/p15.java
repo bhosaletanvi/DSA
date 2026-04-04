@@ -1,3 +1,7 @@
+// Q15. Find Sum of All Negative Numbers
+// 👉 Return sum of all negative elements
+// Input: [1,-2,3,-4,5]
+// Output: -6
 import java.util.*;
  class negative_sum {
     public static void main(String[] args) {

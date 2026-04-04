@@ -1,3 +1,7 @@
+// 7. Find Maximum Element
+// 👉 Return maximum value in array
+// Input: [3,9,1,7]
+// Output: 9
 import java.util.*;
  class Max_element{
     public static void main(String[] args) {

@@ -1,3 +1,7 @@
+// 9. Sum of Elements at Odd Index
+// 👉 Return sum of elements at index 1,3,5...
+// Input: [10,20,30,40,50]
+// Output: 20 + 40 = 60
 import java.util.*;
  class Sum_of_odd_index{
     public static void main(String[] args) {

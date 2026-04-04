@@ -1,3 +1,7 @@
+// 19. Find Sum of Digits of All Elements
+// 👉 Each element is a number → sum all digits recursively
+// Input: [12, 34, 5]
+// Output: 1+2+3+4+5 = 15
 
 import java.util.Scanner;
 

@@ -1,3 +1,7 @@
+// Q4. Check if Array is Sorted
+// 👉 Return true if sorted in ascending order
+// Input: [1,2,3,4]
+// Output: true
 import java.util.*;
  class Sorted_array {
     public static void main(String[] args) {

@@ -1,4 +1,8 @@
 
+// Q17. Count Elements Divisible by K
+// 👉 Return count of elements divisible by k
+// Input: [2,4,5,6,9], k = 2
+// Output: 3
 import java.util.Scanner;
 
 class divisible_by_k {

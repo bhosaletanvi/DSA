@@ -1,3 +1,7 @@
+// Q8. Find Minimum Element
+// 👉 Return minimum value
+// Input: [3,9,1,7]
+// Output: 1
 import java.util.*;
  class min_element{
     public static void main(String[] args) {
