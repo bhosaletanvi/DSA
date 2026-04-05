@@ -1,3 +1,7 @@
+// Q1. Find First Occurrence
+// 👉 Return index of first occurrence of target
+// Input: arr = [5,2,3,2,4], target = 2
+// Output: 1
 import java.util.Scanner;
 class first_Occurance{
     public static void main(String[] args) {
