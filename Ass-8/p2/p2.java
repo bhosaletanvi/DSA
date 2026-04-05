@@ -11,6 +11,7 @@ class demo{
         } 
         System.out.print("Enter Value of K:");
         int k=sc.nextInt(); 
+        int ans=0;
         for(int i=0;i<arr.length;i++){
             int count=0;
             for(int j=0;j<arr.length;j++){
@@ -19,9 +20,10 @@ class demo{
                 }
             }
             if(count>k){
-                System.out.print(arr[i]);
+                ans=arr[i];
             }
         }
+        System.out.println(ans);
 
     }
 }
