@@ -1,4 +1,8 @@
-
+// Q2. Frequency Greater Than K
+// Print all elements whose frequency is greater than K
+// Example:
+// arr = [1,1,2,2,2,3], K = 2
+// → Output: 2
 import java.util.Scanner;
 
  class demo {
