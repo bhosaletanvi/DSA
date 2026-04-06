@@ -6,7 +6,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
- class hashmap {
+ class demo {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter array Size :");
