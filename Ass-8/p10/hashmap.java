@@ -6,7 +6,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
- class demo {
+ class demo{
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter 1st array Size :");
@@ -33,7 +33,7 @@ import java.util.Scanner;
         }
         for(Integer key : hm1.keySet()){
             if(hm2.containsKey(key)){
-                System.out.println(key+" "+hm1.get(key));
+                System.out.println(key+" -> "+hm1.get(key));
             }
         }
     }
