@@ -1,8 +1,8 @@
-// Q6. Most Frequent Character in String
-// Return most frequent character in the string
+// Q11. Check If Two Strings Are Anagrams
+// Same characters with same frequency
 // Example:
-// String str = "apple"
-// → Output: 'p'
+// String str1 = "heart" , String str2 = "earth"
+// → Output: true
 import java.util.Scanner;
 class demo{
     public static void main(String [] args){
@@ -19,14 +19,16 @@ class demo{
         for(int i=0;i<str2.length();i++){
             freq2[str2.charAt(i)-'a']++;
         }
-        
+        boolean flag=true;
         for(int i=0;i<freq1.length;i++){
-            if(freq1[i]==freq2[i]){
-                
+            if(freq1[i]!=freq2[i]){
+                flag=false;
+                break;
             }
 
         }
-        System.out.print((char)(ans+'a'));
+        System.out.print(flag);
+        
     }
 
 }
