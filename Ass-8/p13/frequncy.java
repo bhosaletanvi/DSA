@@ -1,7 +1,7 @@
-// Print all unique (non-repeating) elements
-// Example:
-// arr = [1,1,2,2,2,3]
-// → Output: 3
+// Q13. Replace Elements with Frequency
+// 👉 Convert:
+// [1,2,2,3]
+// → [1,2,2,1]
 import java.util.Scanner;
 
  class demo {
@@ -14,10 +14,7 @@ import java.util.Scanner;
         for (int i = 0; i <arr.length; i++) {
         arr[i]=sc.nextInt();
         } 
-        for (int i = 0; i <arr.length; i++) {
-        System.out.print(" "+arr[i]);
-        } 
-        System.out.println();
+        
         int max=0;
         for (int i = 0; i < arr.length; i++) {
             max=Math.max(max, arr[i]);
@@ -27,8 +24,8 @@ import java.util.Scanner;
             freq[arr[i]]++;
         }
         for (int i = 0; i < freq.length; i++) {
-            if(freq[i]>=1){
-                System.out.print(" "+freq[i]);
+            if(freq[i]==1){
+                System.out.print(" "+i);
             }
         }
 
