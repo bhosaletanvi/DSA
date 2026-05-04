@@ -5,20 +5,23 @@ class demo{
 		System.out.print("Enter Array Size : ");
 		int size = sc.nextInt();
 		int [] arr = new int[size];
+		
 		System.out.print("Enter array element : ");
 		for(int i = 0; i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int odd = 0;
-		int even = 0;
-		for(int i =0;i<arr.length;i++){
-			if(i%2==0){
-				Sytem.out.print("");
-			}
-			else{
-				odd++;
+		
+		System.out.print("Enter Target : ");
+		int target = sc.nextInt();
+		System.out.print("ans : "+targetvalue(arr,target));
+	}
+	
+	static int targetvalue(int [] arr,int target){
+		for(int i=0;i<arr.length;i++){
+			if(arr[i]==target){
+				return i;
 			}
 		}
-		System.out.print(" total Odd Numbers : "+odd+"\n total Even Numbers : "+even);
+		return -1;
 	}
 }

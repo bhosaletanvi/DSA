@@ -5,20 +5,14 @@ class demo{
 		System.out.print("Enter Array Size : ");
 		int size = sc.nextInt();
 		int [] arr = new int[size];
+		int sum =0;	
 		System.out.print("Enter array element : ");
 		for(int i = 0; i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int odd = 0;
-		int even = 0;
-		for(int i =0;i<arr.length;i++){
-			if(i%2==0){
-				Sytem.out.print("");
-			}
-			else{
-				odd++;
-			}
+		for(int i = 0; i<arr.length;i++){
+			sum=sum+arr[i];
 		}
-		System.out.print(" total Odd Numbers : "+odd+"\n total Even Numbers : "+even);
+		System.out.print("Avrage : "+(sum/arr.length));
 	}
 }
