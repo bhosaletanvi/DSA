@@ -9,16 +9,14 @@ class demo{
 		for(int i = 0; i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int odd = 0;
-		int even = 0;
-		for(int i =0;i<arr.length;i++){
-			if(i%2==0){
-				Sytem.out.print("");
-			}
-			else{
-				odd++;
-			}
+		System.out.print("Elements at even indices:");
+		for(int i =0;i<arr.length;i=i+2){
+			System.out.print(" "+arr[i]);
 		}
-		System.out.print(" total Odd Numbers : "+odd+"\n total Even Numbers : "+even);
+
+		System.out.print("\nElements at Odd indices:");
+		for(int i =1;i<arr.length;i=i+2){
+			System.out.print(" "+arr[i]);
+		}		
 	}
 }
