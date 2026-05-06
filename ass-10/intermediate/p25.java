@@ -9,18 +9,19 @@ class demo{
 		for(int i=0;i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int max=0;
-		for(int i =0;i<arr.length;i++){
-			max=Math.max(max,arr[i]);
-		}
-		int [] freq=new int[max+1];
-		for(int i =0;i<arr.length;i++){
-			freq[arr[i]]++;
-		}
-		for(int i=0;i<freq.length;i++){
-			if(freq[i]>(arr.length)/2){
-				System.out.println(i);
+		for(int i=0;i<arr.length;i++){
+			int left_sum=0,right_sum=0;
+			for(int j =0; j<i;j++){
+				left_sum+=arr[j];
 			}
-		}
+			
+			for(int j =i+1; j<arr.length;j++){
+				right_sum+=arr[j];
+			}
+			
+			if(left_sum==right_sum){
+				System.out.print(" "+i);
+			}
+		}		
 	}
 }

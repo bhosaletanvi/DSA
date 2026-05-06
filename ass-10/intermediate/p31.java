@@ -9,18 +9,14 @@ class demo{
 		for(int i=0;i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int max=0;
-		for(int i =0;i<arr.length;i++){
-			max=Math.max(max,arr[i]);
-		}
-		int [] freq=new int[max+1];
-		for(int i =0;i<arr.length;i++){
-			freq[arr[i]]++;
-		}
-		for(int i=0;i<freq.length;i++){
-			if(freq[i]>(arr.length)/2){
-				System.out.println(i);
+		for(int i=0;i<arr.length;i++){
+			for(int j=0;j<arr.length;j++){
+				for(int k =0;k<arr.length;k++){
+					if(arr[i]+arr[j]+arr[k]==0){
+						System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
+					} 
+				}
 			}
-		}
+		}	
 	}
 }
