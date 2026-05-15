@@ -10,8 +10,13 @@ class demo{
 			arr[i]=sc.nextInt();
 		}
 		int max=max(arr,0);
-		int ans1=max(arr,max);	
-		System.out.print(ans1);
+		int Secondmax=max(arr,max);	
+		System.out.print("Second Max : "+Secondmax);
+	
+		int min=min(arr,max);
+		int Secondmin=min(arr,min);	
+		System.out.print("\nSecond min : "+Secondmin);
+
 	}
 	static int max(int [] arr,int max){
 		int temp=0;
@@ -23,5 +28,14 @@ class demo{
 		return temp;
 	}
 
+	static int min(int [] arr,int min){
+		int temp=Integer.MAX_VALUE;
+		for(int i=0;i<arr.length;i++){
+			if(arr[i]!=min){
+				temp=Math.min(temp,arr[i]);
+			}
+		}
+		return temp;
+	}
 	
 }
