@@ -11,15 +11,16 @@ class demo{
 		}
 		int max=max(arr,0);
 		int ans1=max(arr,max);	
+		System.out.print(ans1);
 	}
 	static int max(int [] arr,int max){
 		int temp=0;
 		for(int i=0;i<arr.length;i++){
 			if(arr[i]!=max){
-				max=Math.max(temp,arr[i]);
+				temp=Math.max(temp,arr[i]);
 			}
 		}
-		return max;
+		return temp;
 	}
 
 	
