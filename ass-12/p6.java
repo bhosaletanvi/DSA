@@ -5,32 +5,22 @@ class demo{
 		
 		System.out.println("Enter Size : ");
 		int size= sc.nextInt();
+		sc.nextLine();
 		String [] str = new String[size];
 		System.out.println("Enter String : ");
 		for(int i=0;i<str.length;i++){
 			str[i]=sc.nextLine();
 		}
-		sc.nextLine();
-		for(int i=0;i<str.length;i++){
-			System.out.println(str[i]);
-		}
 
-		boolean flag = true;
+		String rev=" ";
 		for(int j=0;j<str.length;j++){
 			String temp = str[j];
-			System.out.println(temp);
-
-			int index=0;
-			flag = true;
+			rev="";			
 			for(int i=temp.length()-1;i>=0;i--){
-				if(temp.charAt(index)!=temp.charAt(i)){
-					flag = false;
-					break;
-		
-				}
-				index++;
+				rev+=temp.charAt(i);
 			}
-			if(flag){
+
+			if(temp.equals(rev)){
 				System.out.print(temp);
 				break;
 			}
