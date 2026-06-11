@@ -2,36 +2,21 @@ import java.util.*;
 class demo{
 	public static void main(String [] args){
 		Scanner sc = new Scanner(System.in);
-		System.out.print("enter City pair Count : ");
-		int size = sc.nextInt();
-		sc.nextLine();
-		System.out.print("enter Cities : ");
-		String [][] path = new String[size][2];
-		for(int i=0;i<size;i++){
-			for(int j=0;j<2;j++){
-				path[i][j]=sc.nextLine();
-			}
-		}
-		System.out.println("City Path..");
-		
-		for(int i=0;i<size;i++){
-			System.out.println(path[i][0]+" --> "+path[i][1]);
+		StringBuilder sb = new StringBuilder();
+		System.out.println("Enter String : ");
+		sb.append(sc.nextLine());
+		for(int i=0;i<sb.length();i++){
+			int count=1;
+			for(int j=i;j<sb.length()-1;j++){
 
-		}
-
-		boolean flag =false;
-		for(int i=0;i<size;i++){
-			String city = path[i][1];
-			flag = false;
-			for(int j=0;j<size;j++){
-				if(city.equals(path[j][0])){
-					flag=true;
-					break;
+				if(sb.charAt(j)==sb.charAt(j+1)){
+					count++;
+				}else if(count>2){
+					count-=2;
+					sb.delete((j-count+1),j+1);
 				}
-			}
-			if(!flag){
-				System.out.print(city+" ");
-			}
-		}		
+			}	
+		}
+		System.out.print(sb);		
 	}
 }
