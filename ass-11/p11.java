@@ -36,10 +36,9 @@ class demo{
 				two++;
 				index++;
 			}else if(freq[i]==1){
-				arr1[index]=i;
 				if(index==one){
 					arr1[index]=i;
-					two++;
+					one++;
 					index=two;
 					if(index==(arr.length/2)){
 						index--;
@@ -47,7 +46,7 @@ class demo{
 
 				}else{
 					arr2[index]=i;
-					one++;
+					two++;
 					index=one;
 					if(index==(arr.length/2)){
 						index--;
