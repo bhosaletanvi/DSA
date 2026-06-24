@@ -9,9 +9,15 @@ class demo{
 		for(int i = 0; i<arr.length;i++){
 			arr[i]=sc.nextInt();
 		}
-		int index=0;
-		while(index<arr.length){
-			
-		}
+		ArrayList<Integer> al = new ArrayList<>();
+		for(int i=0;i<arr.length;i++){
+			for(int j=i;j<arr.length;j++){
+				if(arr[j]==arr[i]*2){
+					al.add(arr[i]);
+
+				}
+			}
+		}			
+		System.out.println(al);
 	}
 }
